@@ -16,6 +16,5 @@ class LogAnalyzer2 {
         if URL(fileURLWithPath: fileName).pathExtension == "log" {
             isFileValid = true
         }
-        isFileValid = false
     }
 }
