@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C52AED22262D6409006B2D2B /* LogAnalyzerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52AED21262D6409006B2D2B /* LogAnalyzerMock.swift */; };
 		C55F885E261585530072EF17 /* LogAnalyzer1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55F885D261585530072EF17 /* LogAnalyzer1.swift */; };
 		C55F88662615860F0072EF17 /* LogAnalyzer2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55F88652615860F0072EF17 /* LogAnalyzer2.swift */; };
 		C5C171E72615600C007B73CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C171E62615600C007B73CC /* AppDelegate.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C52AED21262D6409006B2D2B /* LogAnalyzerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogAnalyzerMock.swift; sourceTree = "<group>"; };
 		C55F885D261585530072EF17 /* LogAnalyzer1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogAnalyzer1.swift; sourceTree = "<group>"; };
 		C55F88652615860F0072EF17 /* LogAnalyzer2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogAnalyzer2.swift; sourceTree = "<group>"; };
 		C5C171E32615600C007B73CC /* UnitTestsExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitTestsExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,6 +140,7 @@
 		C5EABC6626281C780051B93B /* Mock */ = {
 			isa = PBXGroup;
 			children = (
+				C52AED21262D6409006B2D2B /* LogAnalyzerMock.swift */,
 			);
 			path = Mock;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 			files = (
 				C5EABC82262842580051B93B /* LogAnalyzerStub4.swift in Sources */,
 				C5C171F12615600C007B73CC /* UnitTestsExample.xcdatamodeld in Sources */,
+				C52AED22262D6409006B2D2B /* LogAnalyzerMock.swift in Sources */,
 				C5EABC742628389B0051B93B /* LogAnalyzerStub2.swift in Sources */,
 				C5EABC7E26283E3B0051B93B /* LogAnalyzerStub3.swift in Sources */,
 				C55F885E261585530072EF17 /* LogAnalyzer1.swift in Sources */,

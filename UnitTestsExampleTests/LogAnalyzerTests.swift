@@ -16,13 +16,13 @@ class LogAnalyzerTests: XCTestCase {
     override func tearDownWithError() throws {
     }
 
-    func test_isValidFileName_BadExtension_ReturnsFalse() throws {
+    func testIsValidFileName_BadExtension_ReturnsFalse() throws {
         let analyzer = LogAnalyzer1()
         let result = analyzer.isValidLogFileName(fileName: "abc.jpg")
         XCTAssert(result == false)
     }
     
-    func test_isValidFileName_CorrectFileType_ReturnsTrue() throws {
+    func testIsValidFileName_CorrectFileType_ReturnsTrue() throws {
         let analyzer = LogAnalyzer2()
         analyzer.isValidLogFileName(fileName: "/sss/abc.log")
         XCTAssert(analyzer.isFileValid == true)
@@ -56,6 +56,14 @@ class LogAnalyzerTests: XCTestCase {
         let analyzer = TestableLogAnalyzer(extensionManager: fakeExtensionManager)
         let result = analyzer.isValidFile(fileName: "abc.json")
         XCTAssert(result == false)
+    }
+    
+    func testAnalyze_TooShortFileName_CallsWebService() throws {
+        let mockService: FakeWebService = FakeWebService()
+        let analyzer = LogAnalyzerMock(webService: mockService)
+        analyzer.analyze(fileName: "abc.log")
+        let result: String = mockService.lastError
+        XCTAssert(result == "FileName too short: abc.log")
     }
 
 }
